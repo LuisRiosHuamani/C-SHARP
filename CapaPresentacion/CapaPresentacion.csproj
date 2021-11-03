@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A9FC282-00D0-4E04-8D0F-3047DF948E4C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoria.Designer.cs">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarca.Designer.cs">
+      <DependentUpon>FormMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDASHBOARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDASHBOARD.Designer.cs">
+      <DependentUpon>FrmDASHBOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInformation.Designer.cs">
+      <DependentUpon>FrmInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal01.Designer.cs">
+      <DependentUpon>FrmPrincipal01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSucess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSucess.Designer.cs">
+      <DependentUpon>FrmSucess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMantenimientoViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMantenimientoViews.Designer.cs">
+      <DependentUpon>ProductMantenimientoViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsViews.Designer.cs">
+      <DependentUpon>ProductsViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCategoria.resx">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarca.resx">
+      <DependentUpon>FormMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDASHBOARD.resx">
+      <DependentUpon>FrmDASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInformation.resx">
+      <DependentUpon>FrmInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal01.resx">
+      <DependentUpon>FrmPrincipal01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSucess.resx">
+      <DependentUpon>FrmSucess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMantenimientoViews.resx">
+      <DependentUpon>ProductMantenimientoViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsViews.resx">
+      <DependentUpon>ProductsViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{40759631-07d9-4ecb-8981-ec7a79214094}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
+      <Project>{bce2bc7d-b9ec-4455-be01-c76c44295958}</Project>
+      <Name>CapaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Img10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foto2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\img14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foto3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foto4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foto5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono5.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
